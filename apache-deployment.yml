@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: my-app-container
-          image: premchand381/my-repo:latest
+          image: premchand381/my-app:latest
           ports:
             - containerPort: 80
 
@@ -31,6 +31,6 @@ spec:
     app: my-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 85
+      targetPort: 85
       nodePort: 30007

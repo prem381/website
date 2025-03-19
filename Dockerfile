@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-# Install Apache
+# Install Apache2
 RUN apt update && apt install -y apache2
 
 # Configure Apache to listen on port 85

@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app-deployment
+  name: myapp-deployment
   labels:
     app: my-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: my-app
@@ -15,8 +15,7 @@ spec:
         app: my-app
     spec:
       containers:
-        - name: my-app-container
-          image: premchand381/my-app:latest
-          ports:
-            - containerPort: 80
-
+      - name: my-app
+        image: premchand381/my-app:latest
+        ports:
+        - containerPort: 85

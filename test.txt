@@ -1,1 +1,2 @@
 This is the filnal test of the app.
+test 2
